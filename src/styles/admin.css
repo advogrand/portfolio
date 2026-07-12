@@ -42,6 +42,7 @@ button:disabled { cursor: not-allowed; opacity: .38; }
 .admin-status { padding: 6px 9px; color: #bdfc59; border: 1px solid rgba(189,252,89,.28); border-radius: 5px; font-size: .75rem; }
 
 .admin-site-link { color: #d1d1d1; font-size: .88rem; }
+.admin-logout, .admin-auth__switch { color: #d1d1d1; background: transparent; border: 0; font-size: .82rem; }
 
 .admin-layout {
   display: grid;
@@ -89,6 +90,7 @@ button:disabled { cursor: not-allowed; opacity: .38; }
 .admin-nav button:hover, .admin-nav button.is-selected { color: #fff; background: rgba(225,44,255,.11); border-color: rgba(225,44,255,.32); }
 
 .admin-reset { margin-top: auto; padding: 0 12px; color: #d1d1d1; font-size: .82rem; }
+.admin-feedback { display: block; margin-top: auto; color: rgba(209,209,209,.62); font-size: .75rem; line-height: 1.45; }
 
 .admin-content { padding: 42px 0 72px 48px; }
 .admin-content__topline { align-items: center; }
@@ -130,6 +132,14 @@ button:disabled { cursor: not-allowed; opacity: .38; }
 .admin-section { margin-top: 0; }
 .admin-contacts h2 { margin-top: 0; font-size: 1.55rem; }
 
+.admin-auth-page { display: grid; min-height: 100svh; place-items: center; padding: 28px; }
+.admin-auth { display: grid; gap: 15px; width: min(100%, 420px); padding: 34px; background: rgba(23,20,25,.88); border: 1px solid rgba(255,255,255,.12); border-radius: 8px; }
+.admin-auth > p { margin: 18px 0 -8px; color: #bdfc59; font-size: .76rem; font-weight: 700; }
+.admin-auth h1 { margin: 0; font-family: Geologica, Inter, sans-serif; font-size: 2rem; font-weight: 600; }
+.admin-auth label { display: grid; gap: 8px; color: #d1d1d1; font-size: .82rem; font-weight: 600; }
+.admin-auth input { min-height: 46px; padding: 0 13px; color: #fff; background: rgba(16,14,14,.7); border: 1px solid rgba(255,255,255,.13); border-radius: 6px; }
+.admin-auth small { color: rgba(209,209,209,.68); line-height: 1.45; }
+
 @media (max-width: 760px) {
   .admin-header, .admin-layout { width: min(100% - 28px, 1240px); }
   .admin-header { min-height: 64px; }
@@ -140,6 +150,7 @@ button:disabled { cursor: not-allowed; opacity: .38; }
   .admin-nav { display: flex; overflow-x: auto; margin: 18px -14px 0; padding: 0 14px 6px; }
   .admin-nav button { flex: 0 0 auto; width: auto; }
   .admin-reset { display: none; }
+  .admin-feedback { display: none; }
   .admin-content { padding: 28px 0 50px; }
   .admin-content__topline { align-items: start; }
   .admin-actions { flex-wrap: wrap; justify-content: end; }
