@@ -504,6 +504,8 @@ h2 {
 }
 
 .fact-list li {
+  display: flex;
+  align-items: center;
   min-height: 82px;
   padding: 18px;
   color: var(--gray);
