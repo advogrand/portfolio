@@ -720,6 +720,11 @@ h2 {
     grid-template-columns: 1fr;
   }
 
+  .logo-block img {
+    max-width: 240px;
+    max-height: 46px;
+  }
+
   .contact {
     padding: 36px 24px;
   }
